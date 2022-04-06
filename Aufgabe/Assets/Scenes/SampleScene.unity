@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 225318288}
   m_Layer: 3
   m_Name: Cube_Parent
-  m_TagString: Cube
+  m_TagString: ChangeColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,6 +282,9 @@ MonoBehaviour:
   clickableLayer:
     serializedVersion: 2
     m_Bits: 8
+  clickableLayer2:
+    serializedVersion: 2
+    m_Bits: 0
   Obj: {fileID: 225318280}
 --- !u!1 &363858095
 GameObject:
@@ -486,9 +489,9 @@ GameObject:
   - component: {fileID: 731704021}
   - component: {fileID: 731704025}
   - component: {fileID: 731704026}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Sphere_Children
-  m_TagString: Cube
+  m_TagString: ChangeColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -597,7 +600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
+  clickableLayer2:
+    serializedVersion: 2
+    m_Bits: 64
   Obj: {fileID: 731704020}
 --- !u!1 &791195361
 GameObject:

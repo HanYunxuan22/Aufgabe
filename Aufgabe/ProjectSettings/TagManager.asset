@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cube
+  - ChangeColor
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - clickable
   - Water
   - UI
-  - 
+  - clickableLayer2
   - 
   - 
   - 

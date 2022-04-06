@@ -11,15 +11,20 @@ public class MoveCube : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rb.AddForce(0, 0, forwardForce * Time.deltaTime); 
-
-
+        if (Input.GetKey("w")) 
+         { 
+            Rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+        }
+        if (Input.GetKey("s"))
+        {
+            Rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
+        }
 
         if (Input.GetKey("d")) // rechts
         {
             Rb.AddForce(sidewayForce * Time.deltaTime, 0, 0);
         }
-      if(Input.GetKey("a")) //links
+        if(Input.GetKey("a")) //links
         {
             Rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
         }
