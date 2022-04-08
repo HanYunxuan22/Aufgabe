@@ -8,10 +8,10 @@ public class Rotation : MonoBehaviour
     public Transform Sphere_Children; //Selbst rotation
    
 
-    // Update is called once per frame
+    
     void Update()
     {
-        Sphere_Children.Rotate(Vector3.up, 20f * Time.deltaTime, Space.Self);  // Vector3.up +y im Weltkoordinatesytem, Geschwindigkeit, eigene Koordinatesystem
+        Sphere_Children.Rotate(Vector3.up, 20f * Time.deltaTime, Space.Self);  // Vector3.up +y (0,1,0), Geschwindigkeit, eigene Koordinatesystem
         Sphere_Children.RotateAround(Cube_Parent.position, Cube_Parent.up, 20f * Time.deltaTime); 
     }
 }
